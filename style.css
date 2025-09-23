@@ -43,3 +43,29 @@
   --radius-24: 1.5rem;
   --radius-12: 0.75rem;
 }
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 100vh;
+}
+main{
+  display: flex;
+align-items: center;
+gap: var(--space-300);
+background-color: var(--white);
+}
+article{
+  max-width:46rem;
+  max-height: 106.25rem;
+}
+article img{
+  width: 100%;
+  height: 100%;
+}
