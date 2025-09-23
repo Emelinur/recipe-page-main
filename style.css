@@ -1,0 +1,45 @@
+:root {
+  /* Colors */
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+  --stone-900: hsl(24, 5%, 18%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-100: hsl(30, 54%, 90%);
+  --brown-800: hsl(14, 45%, 36%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Typography (families & weights) */
+  --ff-serif: "Young Serif", serif;
+  --ff-sans: "Outfit", sans-serif;
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  /* Text Presets */
+  --fs-1: 2.5rem;
+  --fs-2: 1.75rem;
+  --fs-3: 1.25rem; /* fix */
+  --fs-4: 1rem;
+  --fs-5: 1rem;
+  --lh-1: 1;
+  --lh-2: 1.5;
+  --ls-default: 0;
+
+  /* Spacing (375 → 1440, min floor = 8px) */
+  --vw-min: 375px;
+  --vw-max: 1440px; 
+  
+  --space-1600: clamp(8px, calc(8px + (128px - 8px) * ((100vw - var(--vw-min)) / (var(--vw-max) - var(--vw-min)))), 128px);
+  --space-600:  clamp(8px, calc(8px + (48px  - 8px) * ((100vw - var(--vw-min)) / (var(--vw-max) - var(--vw-min)))),  48px);
+  --space-500:  clamp(8px, calc(8px + (40px  - 8px) * ((100vw - var(--vw-min)) / (var(--vw-max) - var(--vw-min)))),  40px);
+  --space-400:  clamp(8px, calc(8px + (32px  - 8px) * ((100vw - var(--vw-min)) / (var(--vw-max) - var(--vw-min)))),  32px);
+  --space-300:  clamp(8px, calc(8px + (24px  - 8px) * ((100vw - var(--vw-min)) / (var(--vw-max) - var(--vw-min)))),  24px);
+  --space-200:  clamp(8px, calc(8px + (16px  - 8px) * ((100vw - var(--vw-min)) / (var(--vw-max) - var(--vw-min)))),  16px);
+  --space-150:  clamp(8px, calc(8px + (12px  - 8px) * ((100vw - var(--vw-min)) / (var(--vw-max) - var(--vw-min)))),  12px);
+  --space-100:  0.5rem; /* 8px sabit */
+
+  /* Radius */
+  --radius-24: 1.5rem;
+  --radius-12: 0.75rem;
+}
