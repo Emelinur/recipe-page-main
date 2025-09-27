@@ -282,9 +282,10 @@ main {
 }
 
 .nutrition-table td {
-  text-align: text;
+  text-align: end;
   color: var(--brown-800);
   font-weight: var(--fw-700);
+  font-variant-numeric: tabular-nums;
 }
 
 .nutrition-table tr:not(:last-child) th,
