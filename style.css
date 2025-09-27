@@ -120,7 +120,7 @@ main {
 }
 .top-image img{
   width: 100%;
-  height: clamp(180px, 22vw, 300px);  /* 375≈180px → 1440≈300px */
+  height: clamp(11.25rem, 22vw, 18.75rem);  /* 375≈180px → 1440≈300px */
   object-fit: cover;
   border-radius: var(--radius-12);
   display: block;
@@ -174,7 +174,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: var(--space-300);
-  padding-bottom: var(--space-200);
+   padding-block-end: var(--space-200);
   border-bottom: 1px solid var(--stone-150);
  
 }
@@ -202,7 +202,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: var(--space-300);
-   padding-bottom: var(--space-300);
+    padding-block-end: var(--space-300);
   border-bottom: 1px solid var(--stone-150);
 }
 .instructions h2{
@@ -215,10 +215,11 @@ main {
   display: flex;
   flex-direction: column;
   gap: var(--space-100);
+   padding-inline-start: var(--space-500);
 }
 .instructions ol li{
-  padding-inline-start: var(--space-200);   /* was padding-left */
-  margin-inline-start: var(--space-300);    /* was margin-left */
+  padding-inline-start: var(--space-200);
+  margin-inline-start: var(--space-300);
   font-family: var(--ff-sans);
   color: var(--stone-600);
   font-size: var(--fs-4);
@@ -247,10 +248,10 @@ main {
 
 .sr-only{
   position: absolute;
-  width: 1px;
-  height: 1px;
+  inline-size: 1px;      /* width */
+  block-size: 1px;       /* height */
   padding: 0;
-  margin: -1px;
+  margin: -0.0625rem;    /* -1px */
   overflow: hidden;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -273,7 +274,7 @@ main {
 }
 
 .nutrition-table th {
-  text-align: left;
+  text-align: start;
   color: var(--stone-600);
   font-weight: var(--fw-400);
 }
@@ -287,5 +288,5 @@ main {
 
 .nutrition-table tr:not(:last-child) th,
 .nutrition-table tr:not(:last-child) td {
-  border-bottom: 1px solid var(--stone-150);
+  border-block-end: 1px solid var(--stone-150);
 }
