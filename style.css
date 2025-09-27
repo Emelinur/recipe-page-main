@@ -251,7 +251,7 @@ main {
   inline-size: 1px;      /* width */
   block-size: 1px;       /* height */
   padding: 0;
-  margin: -0.0625rem;    /* -1px */
+  margin: 0;             
   overflow: hidden;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -280,7 +280,7 @@ main {
 }
 
 .nutrition-table td {
-  text-align: end;
+  text-align: start;
   color: var(--brown-800);
   font-weight: var(--fw-700);
   font-variant-numeric: tabular-nums;
