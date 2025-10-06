@@ -287,3 +287,4 @@ main {
 .nutrition-table tr:not(:last-child) td {
   border-block-end: 1px solid var(--stone-150);
 }
+
